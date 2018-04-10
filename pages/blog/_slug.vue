@@ -1,6 +1,9 @@
 <template>
   <article>
     <h1>{{ title }}</h1>
+    <img v-if="thumbnail" :src="thumbnail" :alt="title">
+    <p>{{ date }}</p>
+    <p>{{ body }}</p>
   </article>
 </template>
 
